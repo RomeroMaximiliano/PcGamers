@@ -1,0 +1,35 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:     "Offers Notebooks Notebooks"
+                             "Offers Notebooks Notebooks"
+                             "Offers Timetable  Attention";
+    padding: 5% 8%; 
+    gap: 3%;
+    img{
+        height: 100%;
+        width: 100%;
+
+    }
+}
+
+.Offers{
+grid-area: Offers;
+
+}
+
+.Notebooks{
+grid-area: Notebooks;
+
+}
+
+.Timetable{
+grid-area: Timetable;
+
+}
+
+.Attention{
+grid-area: Attention;
+
+}

@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+header .Nav {
+  padding: 10px; }
+  header .Nav .PrimaryNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px; }
+    header .Nav .PrimaryNav .SearchBar input {
+      width: 550px;
+      height: 42px;
+      background: #0CABA8;
+      color: black;
+      border-radius: 10px; }
+    header .Nav .PrimaryNav .User-Cart {
+      font-size: 25px; }
+      header .Nav .PrimaryNav .User-Cart a {
+        color: white; }
+      header .Nav .PrimaryNav .User-Cart i {
+        padding: 5px; }
+  header .Nav .list {
+    display: flex;
+    justify-content: space-between; }
+    header .Nav .list .Btn {
+      padding-top: 10px;
+      color: white;
+      font-size: 30px;
+      margin-left: 15px; }
+    header .Nav .list ul {
+      display: flex;
+      list-style: none; }
+      header .Nav .list ul li a {
+        font-size: 1.50rem;
+        color: white;
+        padding: 10px;
+        text-decoration: none; }
+    header .Nav .list .hidden {
+      width: 76px;
+      color: transparent; }
+  header .Nav img {
+    width: 60px; }
+
+header {
+  background: linear-gradient(0deg, #015958 0%, #023535 65%); }
+  header .ResponsiveNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .ResponsiveNav .Bars {
+      width: 60px;
+      text-align: center; }
+      header .ResponsiveNav .Bars i {
+        color: white;
+        font-size: 30px; }
+    header .ResponsiveNav .SearchBar {
+      display: flex;
+      align-items: center;
+      background-color: #fafafa;
+      padding: 8px 16px;
+      border-radius: 40px; }
+      header .ResponsiveNav .SearchBar .SearchIcon {
+        font-size: 1.5rem;
+        color: #015958; }
+      header .ResponsiveNav .SearchBar .SearchInput {
+        transition: .5s;
+        width: 0px;
+        overflow: hidden; }
+        header .ResponsiveNav .SearchBar .SearchInput input {
+          border: none;
+          outline: none;
+          background-color: unset;
+          padding: 8px;
+          font-weight: bold; }
+    header .ResponsiveNav .SearchBar:hover .SearchInput {
+      width: 300px;
+      margin-left: 8px; }
+    header .ResponsiveNav .img img {
+      margin: 10px;
+      width: 60px; }
+  @media screen and (max-width: 768px) {
+    header .Nav {
+      display: none; } }
+  @media screen and (min-width: 768px) {
+    header .ResponsiveNav {
+      display: none; }
+    header .Nav {
+      display: block; } }
+
+body {
+  background-color: #dfdfdf; }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "Offers Notebooks Notebooks" "Offers Notebooks Notebooks" "Offers Timetable  Attention";
+  padding: 5% 8%;
+  gap: 3%; }
+  main img {
+    height: 100%;
+    width: 100%; }
+
+.Offers {
+  grid-area: Offers; }
+
+.Notebooks {
+  grid-area: Notebooks; }
+
+.Timetable {
+  grid-area: Timetable; }
+
+.Attention {
+  grid-area: Attention; }
+
+.CarrouselBanner {
+  display: flex;
+  justify-content: center; }
+  .CarrouselBanner .MainCarrousel {
+    width: 80%; }
+
+footer h6 {
+  font-size: 1rem;
+  margin-bottom: 1rem; }
+
+footer a {
+  padding: 5px; }
+
+footer p {
+  padding: 5px; }
+
+footer .ContFooter {
+  background-color: #d9d9d9;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between; }
+  footer .ContFooter .Info {
+    display: flex;
+    flex-direction: column; }
+    footer .ContFooter .Info a {
+      text-decoration: none; }
+  footer .ContFooter .Contact {
+    display: flex;
+    flex-direction: column; }
+    footer .ContFooter .Contact p {
+      text-align: start; }
+  footer .ContFooter .Networks div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .ContFooter .Networks a {
+    color: #015958; }
+
+footer p {
+  text-align: center;
+  background-color: #d9d9d9; }
+
+@media screen and (max-width: 768px) {
+  footer .ContFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .ContFooter div {
+      margin-bottom: 50px; }
+    footer .ContFooter .Info {
+      align-items: center; }
+    footer .ContFooter .Contact {
+      align-items: center; }
+    footer .ContFooter .Networks {
+      margin-bottom: 0px; } }
+
+.MWhoiam {
+  margin-top: 50px;
+  background-color: #dfdfdf; }
+  .MWhoiam .contenido {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .MWhoiam .contenido h1 {
+      margin-bottom: 50px; }
+    .MWhoiam .contenido .textImage {
+      display: flex;
+      width: 60%;
+      margin-bottom: 50px;
+      align-items: center; }
+      .MWhoiam .contenido .textImage .img img {
+        width: 200px;
+        margin: 0px 25px; }
+    .MWhoiam .contenido .responsiveimg {
+      display: none; }
+
+@media screen and (max-width: 1042px) {
+  .MWhoiam .contenido .responsiveimg {
+    margin-bottom: 40px;
+    display: inline; }
+    .MWhoiam .contenido .responsiveimg img {
+      margin: 10px;
+      width: 200px;
+      height: 200px; }
+  .MWhoiam .img {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .MWhoiam .contenido .textImage {
+    width: 90%; } }
+
+@media screen and (max-width: 525px) {
+  .MWhoiam .contenido .responsiveimg img {
+    width: 150px;
+    height: 150px; } }
+
+.ppMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.Cuenta {
+  background: #D9D9D9;
+  box-shadow: -2px 3px 12px 9px rgba(0, 0, 0, 0.25);
+  width: 100%; }
+  .Cuenta button {
+    width: 50%;
+    height: 60px;
+    background-color: #015958; }
+  .Cuenta a {
+    text-decoration: none; }
+  .Cuenta li {
+    list-style-type: none; }
+    .Cuenta li i {
+      color: #015958; }
+
+.alert {
+  background-color: #015958;
+  text-align: center;
+  color: white;
+  font-size: 1.18rem;
+  padding: 5px;
+  margin-top: 20px; }
